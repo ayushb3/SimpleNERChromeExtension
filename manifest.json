@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Spacy NER Extension",
+    "version": "1.0",
+    "description": "Chrome extension to perform NER using spaCy",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+}

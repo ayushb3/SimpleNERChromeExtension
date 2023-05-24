@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Example styles for entity labels */
+.person {
+    background-color: yellow;
+}
+
+.org {
+    background-color: cyan;
+}
+
+.gpe {
+    background-color: orange;
+}
+
+.money {
+    background-color: green;
+}
+
+.time {
+    background-color: blue;
+}
+
+.date {
+    background-color: purple;
+}
+
+/* Style for the entity wrapper span */
+.highlight {
+    font-weight: bold;
+    padding: 2px;
+}
